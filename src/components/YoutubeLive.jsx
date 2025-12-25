@@ -1,19 +1,31 @@
 import React from "react";
 
-const CHANNEL_ID = "UCrW3oRAraUQZDneRdMWwf7g";
+export default function YoutubeLive({ videoId, channelId }) {
+  // Opción A (recomendada): videoId del live actual
+  // Opción B: channelId UC... (solo si tienes el UCxxxx real)
 
-export default function YouTubeLive() {
-  const src = `https://www.youtube.com/embed/live_stream?channel=${CHANNEL_ID}&autoplay=1&mute=1&playsinline=1&rel=0`;
+  const src = videoId
+    ? `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0&playsinline=1&rel=0`
+    : `https://www.youtube.com/embed/live_stream?channel=${channelId}&autoplay=1&mute=0&playsinline=1&rel=0`;
 
   return (
-    <div style={{ width: "100%", aspectRatio: "16/9" }}>
-      <iframe
-        src={src}
-        title="IQTV Live"
-        style={{ width: "100%", height: "100%", border: 0 }}
-        allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
-        allowFullScreen
-      />
+    <div style={{ width: "100%", maxWidth: 1200, margin: "0 auto" }}>
+      <div style={{ position: "relative", paddingTop: "56.25%" }}>
+        <iframe
+          src={src}
+          title="IQTV En Vivo"
+          allow="autoplay; encrypted-media; fullscreen"
+          allowFullScreen
+          frameBorder="0"
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            borderRadius: 16,
+          }}
+        />
+      </div>
     </div>
   );
 }

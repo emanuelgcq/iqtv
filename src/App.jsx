@@ -14,7 +14,6 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/sobre-nosotros" element={<About />} />
           <Route path="/contacto" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
 
