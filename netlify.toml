@@ -1,7 +1,6 @@
 [build]
-  base = "iqtv"
   command = "npm run build"
-  publish = "iqtv/dist"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
