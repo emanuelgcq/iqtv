@@ -6,7 +6,7 @@ export default function Home() {
   // 1) Abres tu live en YouTube
   // 2) Copias el link: https://www.youtube.com/watch?v=XXXXXXXXXXX
   // 3) Pegas solo el ID aquí:
-  const LIVE_VIDEO_ID = "dSPw5mMkjCc";
+  const LIVE_VIDEO_ID = "5r4wPMQdhnU";
 
   // Si luego consigues el Channel ID UC..., puedes usar esto:
   // const CHANNEL_ID = "UCxxxxxxxxxxxxxxxx";
