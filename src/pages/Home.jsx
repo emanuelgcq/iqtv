@@ -6,12 +6,13 @@ export default function Home() {
   // 1) Abres tu live en YouTube
   // 2) Copias el link: https://www.youtube.com/watch?v=XXXXXXXXXXX
   // 3) Pegas solo el ID aquí:
-  const LIVE_VIDEO_ID = "4nMfRpesYfw";
+  const LIVE_VIDEO_ID = "dSPw5mMkjCc";
 
   // Si luego consigues el Channel ID UC..., puedes usar esto:
   // const CHANNEL_ID = "UCxxxxxxxxxxxxxxxx";
 
   return (
+    
     <div className="page">
       <section className="hero">
         <img className="hero-logo" src="/media/logo.jpeg" alt="IQTV Logo" />
